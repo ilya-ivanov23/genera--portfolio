@@ -1,6 +1,8 @@
 import { cn } from "@/utils/cn";
 import {BackgroundGradientAnimation} from "@/components/ui/GradientBg";
 import { GlobeDemo } from "./GridGlobe";
+import Image from 'next/image';
+import React from "react";
 
 export const BentoGrid = ({
                               className,
@@ -54,18 +56,20 @@ export const BentoGridItem = ({
             <div className={`${id === 6} && 'flex justify-center h-full`}>
                 <div className="w-full h-full absolute">
                     {img && (
-                        <img
+                        <Image
                          src={img}
                          alt={img}
+                         fill
                          className={cn(imgClassName, 'object-cover object-center')}
                         />
                     )}
                 </div>
                 <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
                     {spareImg && (
-                        <img
+                        <Image
                             src={spareImg}
                             alt={spareImg}
+                            fill
                             className={cn( 'object-cover object-center w-full h-full')}
                         />
                     )}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import React from 'react';
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
@@ -19,6 +20,7 @@ children,
   return (
       <html lang="en" suppressHydrationWarning>
         <head>
+
             <link rel="icon" href="/jsm-logo.png" sizes="any" />
         </head>
         <body className={inter.className}>

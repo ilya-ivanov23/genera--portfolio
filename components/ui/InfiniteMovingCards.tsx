@@ -2,6 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
+import Image from 'next/image';
 
 export const InfiniteMovingCards = ({
                                         items,
@@ -25,8 +26,9 @@ export const InfiniteMovingCards = ({
 
     useEffect(() => {
         addAnimation();
-    }, []);
+    }, [addAnimation]);
     const [start, setStart] = useState(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     function addAnimation() {
         if (containerRef.current && scrollerRef.current) {
             const scrollerContent = Array.from(scrollerRef.current.children);
@@ -107,7 +109,7 @@ export const InfiniteMovingCards = ({
                             <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                     <div className="me-3">
-                        <img src="/profile.svg" alt="profile" />
+                        <Image src="/profile.svg" alt="profile" fill />
                     </div>
                     <div className="flex flex-col gap-1">
                   <span className=" text-xl leading-[1.6] text-white font-bold">
