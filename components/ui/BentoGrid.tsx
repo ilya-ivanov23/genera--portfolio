@@ -53,31 +53,30 @@ export const BentoGridItem = ({
                 backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
         >
-            <div className={`${id === 6} && 'flex justify-center h-full`}>
-                <div className="w-full h-full absolute">
+            <div className={`${id === 6} && "justify-center`}>
+                <div className="w-full h-full absolute ">
                     {img && (
-                        <Image
+                        <img
                          src={img}
                          alt={img}
-                         fill
                          className={cn(imgClassName, 'object-cover object-center')}
                         />
                     )}
                 </div>
-                <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
+                <div className={`absolute right-0 -bottom-6  ${id === 5 && 'opacity-80'}`}>
                     {spareImg && (
-                        <Image
+                        <img
                             src={spareImg}
                             alt={spareImg}
-                            fill
                             className={cn( 'object-cover object-center w-full h-full')}
                         />
                     )}
                 </div>
                 {id === 6 && (
-                    <BackgroundGradientAnimation>
-                        <div className="absolute z-50 flex items-center justify-center text-white font-bold" />
-                    </BackgroundGradientAnimation>
+                    <div className="absolute  flex items-center justify-center text-white font-bold">
+                        <BackgroundGradientAnimation />
+                    </div>
+
                 )}
 
                 <div className={cn(
@@ -95,24 +94,26 @@ export const BentoGridItem = ({
                 {id === 2 && <GlobeDemo />}
 
                 {id === 3 && (
-                    <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-                        <div className="flex flex-col gap-3 lg:gap-8">
+                    <div className="flex gap-1 lg:gap-5 w-fit h-full absolute   -right-3 lg:-right-1.5">
+                        <div className="flex flex-col gap-3 lg:gap-6">
+                            <span className=" px-3 rounded-lg text-center "/>
                             {['React.js', 'Next.js', 'Tailwind CSS'].map((item) => (
                                 <span key={item}
                                       className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                                   {item}
                               </span>
                             ))}
-                            <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
+
                         </div>
-                        <div className="flex flex-col gap-3 lg:gap-8">
+                        <div className="flex flex-col gap-3 lg:gap-6">
+                            <span className="py-3 px-3 rounded-lg text-center "/>
                             {['Vite.js', 'Solidity', 'Typescript'].map((item) => (
                                 <span key={item}
                                       className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                                   {item}
                               </span>
                             ))}
-                            <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
+
                         </div>
                     </div>
                 )}

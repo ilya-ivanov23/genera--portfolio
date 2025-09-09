@@ -20,7 +20,7 @@ export const gridItems = [
         id: 2,
         title: "I'm very flexible with time zone communications",
         description: "",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+        className: "z-1 lg:col-span-2 md:col-span-3 md:row-span-2 ",
         imgClassName: "",
         titleClassName: "justify-start",
         img: "",
@@ -52,7 +52,7 @@ export const gridItems = [
         title: "Currently building a JS Animation library",
         description: "The Inside Scoop",
         className: "md:col-span-3 md:row-span-2",
-        imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+        imgClassName: "flex md:w-96 w-60",
         titleClassName: "justify-center md:justify-start lg:justify-center",
         img: "/b5.svg",
         spareImg: "/grid.svg",
@@ -97,7 +97,7 @@ export const projects = [
     {
         id: 4,
         title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
         img: "/p4.svg",
         iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
         link: "/ui.apple.com",
@@ -107,33 +107,33 @@ export const projects = [
 export const testimonials = [
     {
         quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+            "Collaborating with Ilya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ilya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
         name: "Michael Johnson",
         title: "Director of AlphaStream Technologies",
     },
     {
         quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+            "Collaborating with Ilya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ilya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        name: "Adrian Johnson",
+        title: "Leader of Nokia team",
     },
     {
         quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+            "Collaborating with Ilya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ilya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        name: "Jack John",
+        title: "Top Manager of RedBull",
     },
     {
         quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+            "Collaborating with Ilya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ilya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        name: "Daniels Jack",
+        title: "Director of CCC",
     },
     {
         quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+            "Collaborating with Ilya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ilya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        name: "Michal Son",
+        title: "Project manager of unity",
     },
 ];
 

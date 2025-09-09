@@ -7,7 +7,7 @@ import Image from 'next/image';
 export const InfiniteMovingCards = ({
                                         items,
                                         direction = "left",
-                                        speed = "fast",
+                                        speed = "slow",
                                         pauseOnHover = true,
                                         className,
                                     }: {
@@ -63,11 +63,11 @@ export const InfiniteMovingCards = ({
     const getSpeed = () => {
         if (containerRef.current) {
             if (speed === "fast") {
-                containerRef.current.style.setProperty("--animation-duration", "20s");
+                containerRef.current.style.setProperty("--animation-duration", "100s");
             } else if (speed === "normal") {
-                containerRef.current.style.setProperty("--animation-duration", "40s");
+                containerRef.current.style.setProperty("--animation-duration", "100s");
             } else {
-                containerRef.current.style.setProperty("--animation-duration", "80s");
+                containerRef.current.style.setProperty("--animation-duration", "100s");
             }
         }
     };
@@ -109,7 +109,7 @@ export const InfiniteMovingCards = ({
                             <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                     <div className="me-3">
-                        <Image src="/profile.svg" alt="profile" fill />
+                        <img src="/profile.svg" alt="profile"  />
                     </div>
                     <div className="flex flex-col gap-1">
                   <span className=" text-xl leading-[1.6] text-white font-bold">

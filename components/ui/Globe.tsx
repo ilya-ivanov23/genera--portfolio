@@ -17,7 +17,7 @@ extend({ ThreeGlobe });
 
 const RING_PROPAGATION_SPEED = 3;
 const aspect = 1.2;
-const cameraZ = 300;
+const cameraZ = 350;
 
 type Position = {
     order: number;
@@ -181,7 +181,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
         if (globeRef.current && globeData) {
             globeRef.current
                 .hexPolygonsData(countries.features)
-                .hexPolygonResolution(3)
+                .hexPolygonResolution(4)
                 .hexPolygonMargin(0.7)
                 .showAtmosphere(defaultProps.showAtmosphere)
                 .atmosphereColor(defaultProps.atmosphereColor)
