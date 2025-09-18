@@ -21,7 +21,7 @@ children,
       <html lang="en" suppressHydrationWarning>
         <head>
 
-            <link rel="icon" href="/jsm-logo.png" sizes="any" />
+            <link rel="icon" href="/idp.PNG" sizes="any" />
         </head>
         <body className={inter.className}>
           <ThemeProvider
