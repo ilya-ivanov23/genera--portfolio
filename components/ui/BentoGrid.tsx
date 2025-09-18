@@ -3,6 +3,8 @@ import {BackgroundGradientAnimation} from "@/components/ui/GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import Image from 'next/image';
 import React from "react";
+import MagicButton from "@/components/ui/MagicButton";
+import {IoCopyOutline} from "react-icons/io5";
 
 export const BentoGrid = ({
                               className,
